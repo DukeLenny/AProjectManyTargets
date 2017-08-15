@@ -10,6 +10,8 @@
 
 #import "DemoViewController.h"
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
 @interface ViewController ()
 
 @end
@@ -19,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+#if FirstTarget || SecondTarget
+    [SVProgressHUD showSuccessWithStatus:nil];
+#endif
 }
 
 - (IBAction)buttonClicked:(id)sender
