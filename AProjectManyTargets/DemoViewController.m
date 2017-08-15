@@ -23,6 +23,11 @@
 #elif SecondTarget
     self.view.backgroundColor = [UIColor blueColor];
 #endif
+    
+#ifdef NewTarget
+    self.view.backgroundColor = [UIColor greenColor];
+#endif
+    
 }
 
 - (void)didReceiveMemoryWarning {
