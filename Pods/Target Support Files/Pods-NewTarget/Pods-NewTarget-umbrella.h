@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SecondTargetVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SecondTargetVersionString[];
+FOUNDATION_EXPORT double Pods_NewTargetVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_NewTargetVersionString[];
 

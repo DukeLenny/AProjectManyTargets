@@ -6,12 +6,23 @@ def shared_pods
   pod 'SVProgressHUD'
 end
 
-targets = ['FirstTarget', 'SecondTarget']
+#targets = ['FirstTarget', 'SecondTarget']
+#
+#targets.each do |t|
+#  target t do
+#    shared_pods
+#  end
+#end
 
-targets.each do |t|
-  target t do
+target 'FirstTarget' do
     shared_pods
-  end
+    target 'SecondTarget' do
+        pod 'SDWebImage'
+    end
+end
+
+target 'NewTarget' do
+    pod 'Masonry'
 end
 
 
